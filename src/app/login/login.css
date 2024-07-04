@@ -1,0 +1,146 @@
+
+
+.left-panel{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-text{
+    font-size: 50pt;
+
+}
+
+.sign-up-text{
+    font-size: 20pt;;
+}
+
+.sign-up-button{
+    color: black;
+    font-weight: bold;
+    display: block;
+    border: 1em;
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.login-text{
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-size: 24pt;
+    text-align:   left;
+
+}
+.person-name{
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+     
+}
+.person-name-input{
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0.249);
+    opacity: 0.5;
+    border-style: solid;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.person-surname {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.person-surname-input{
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0.249);
+    opacity: 0.5;
+    border-style: solid;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.person-email {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.person-email-input{
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0.249);
+    opacity: 0.5;
+    border-style: solid;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.person-password {
+    box-shadow: 10px;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.person-password-input{
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0.249);
+    opacity: 0.5;
+    border-style: solid;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-button {
+    color: white;
+    display: block;
+    border: 1em;
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.right-panel{
+    background-color: white;
+    color: black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
