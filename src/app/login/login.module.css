@@ -27,6 +27,7 @@
 }
 
 .welcome-text {
+  margin-top: none;
   font-size: 50pt;
 }
 
@@ -50,44 +51,12 @@
 }
 
 .login-text {
-  margin-top: 150px;
+  color: #282828d7;
   margin-bottom: 10px;
-  font-size: 24pt;
+  font-size: 48pt;
   text-align: left;
-}
-.person-name {
-  text-align: left;
-  display: block;
-  margin-top: 10px;
-}
-.person-name-input {
-  border: 1px solid rgba(0, 0, 0, 0.249);
-  box-sizing: border-box;
-  border-color: rgba(0, 0, 0, 0.249);
-  opacity: 0.5;
-  border-style: solid;
-  display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.person-surname {
-  text-align: left;
-  display: block;
-  margin-top: 10px;
 }
 
-.person-surname-input {
-  border: 1px solid rgba(0, 0, 0, 0.249);
-  box-sizing: border-box;
-  border-color: rgba(0, 0, 0, 0.249);
-  opacity: 0.5;
-  border-style: solid;
-  display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .person-email {
   text-align: left;

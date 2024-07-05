@@ -1,0 +1,67 @@
+.sign-up-text {
+  font-size: 50pt;
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.842);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.terms-text {
+  font-size: 12pt;
+  color: white;
+  margin: 10px 0;
+}
+
+.person-info {
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.249);
+  border-style: solid;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right-panel {
+  background-color: rgba(0, 0, 0, 0.842);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.submit-button {
+  box-shadow: 10pt;
+  color: #5d5e60;
+  display: block;
+  border: 1em;
+  width: 200px;
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
