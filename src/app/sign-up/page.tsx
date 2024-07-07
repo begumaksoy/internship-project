@@ -1,4 +1,6 @@
+import { FormEvent } from "react";
 import style from "./sign-up.module.css";
+import { saveUser } from "../actions/user";
 
 export default function pages() {
   return (
@@ -7,24 +9,28 @@ export default function pages() {
         <p className={style["sign-up-text"]}>Sign Up</p>
       </div>
       <div className={style["right-panel"]}>
-        <form className="signup-form">
+        <form action={saveUser} className="signup-form">
           <input
-            type="text"
+            type="email"
+            name="email"
             className={style["person-info"]}
-            placeholder="Telephone number or E-mail address"
+            placeholder="E-mail address"
           />
           <input
             type="text"
+            name="fullname"
             className={style["person-info"]}
             placeholder="Name Surname"
           />
           <input
             type="text"
+            name="username"
             className={style["person-info"]}
             placeholder="Username"
           />
           <input
             type="password"
+            name="password"
             className={style["person-info"]}
             placeholder="Password"
           />
