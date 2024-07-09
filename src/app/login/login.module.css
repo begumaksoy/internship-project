@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.left-panel {
+.leftPanel {
   background-color: rgba(0, 0, 0, 0.842);
   color: white;
   flex: 1;
@@ -15,7 +15,7 @@
   padding: 20px;
 }
 
-.right-panel {
+.rightPanel {
   background-color: white;
   color: black;
   flex: 2;
@@ -26,16 +26,16 @@
   text-align: center;
 }
 
-.welcome-text {
+.welcomeText {
   margin-top: none;
   font-size: 50pt;
 }
 
-.sign-up-text {
+.signUpText {
   font-size: 20pt;
 }
 
-.sign-up-button {
+.signUpButton {
   color: black;
   font-weight: bold;
   display: block;
@@ -50,13 +50,12 @@
   background-color: white;
 }
 
-.login-text {
+.loginText {
   color: #282828d7;
   margin-bottom: 10px;
   font-size: 48pt;
   text-align: left;
 }
-
 
 .person-email {
   text-align: left;
@@ -64,7 +63,7 @@
   margin-top: 10px;
 }
 
-.person-email-input {
+.personEmailInput {
   border: 1px solid rgba(0, 0, 0, 0.249);
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.249);
@@ -76,14 +75,14 @@
   margin-right: auto;
 }
 
-.person-password {
+.personPassword {
   box-shadow: 10px;
   text-align: left;
   display: block;
   margin-top: 10px;
 }
 
-.person-password-input {
+.personPasswordInput {
   border: 1px solid rgba(0, 0, 0, 0.249);
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.249);
@@ -95,7 +94,7 @@
   margin-right: auto;
 }
 
-.login-button {
+.loginButton {
   color: white;
   display: block;
   border: 1em;
