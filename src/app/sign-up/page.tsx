@@ -1,18 +1,37 @@
-import { FormEvent } from "react";
+"use client";
+import { FormEvent, useState } from "react";
 import style from "./sign-up.module.css";
 import { saveUser } from "../actions/user";
+let pattern =
+  /^([a-z]|[0-9]|(-|_)([a-z]|[0-9])+)+([a-z]|[0-9]|(-|_|.)([a-z]|[0-9])+)*(-|_)?@([a-z]|[0-9])+(.([a-z]|[0-9])+)*.[a-z]{2,}$/i;
 
 export default function pages() {
+  const [email, setEmail] = useState<string>("");
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (pattern.test(email)) {
+      console.log("valid");
+    } else {
+      console.log("not valid");
+    }
+  };
+
   return (
     <div className={style["container"]}>
       <div className={style["left-panel"]}>
         <p className={style["sign-up-text"]}>Sign Up</p>
       </div>
       <div className={style["right-panel"]}>
-        <form action={saveUser} className="signup-form">
+        <form
+          onSubmit={handleSubmit}
+          // action={saveUser}
+          className="signup-form"
+        >
           <input
-            type="email"
+            type="text"
             name="email"
+            onChange={(e) => setEmail((e.currentTarget as any).value)}
             className={style["person-info"]}
             placeholder="E-mail address"
           />
