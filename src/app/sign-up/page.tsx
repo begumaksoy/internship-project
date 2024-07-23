@@ -17,7 +17,7 @@ export default function pages() {
     e.preventDefault();
     if (pattern.test(email)) {
       try {
-        const response = await axios.post("/api", {
+        const response = await axios.post("/api/sign-up", {
           email: email,
           password: password,
           fullname: name,
