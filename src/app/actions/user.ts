@@ -4,7 +4,7 @@ import { sql } from '@vercel/postgres';
 import bcrypt from 'bcrypt';
 
 
-interface User{
+export interface User{
     id: string;
     email: string;
     fullname: string;

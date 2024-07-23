@@ -2,16 +2,39 @@
 import { FormEvent, useState } from "react";
 import style from "./sign-up.module.css";
 import { saveUser } from "../actions/user";
+import axios, { AxiosError } from "axios";
 let pattern =
   /^([a-z]|[0-9]|(-|_)([a-z]|[0-9])+)+([a-z]|[0-9]|(-|_|.)([a-z]|[0-9])+)*(-|_)?@([a-z]|[0-9])+(.([a-z]|[0-9])+)*.[a-z]{2,}$/i;
 
 export default function pages() {
   const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [errors, setErrors] = useState<string[]>([]);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (pattern.test(email)) {
-      console.log("valid");
+      try {
+        const response = await axios.post("/api", {
+          email: email,
+          password: password,
+          fullname: name,
+          username: username,
+        });
+
+        if (response.status == 201) {
+          const res = response.data;
+          console.log(res);
+        }
+
+        console.log("valid");
+      } catch (err) {
+        const response = err as AxiosError;
+        const res = response.response?.data as any;
+        setErrors(res.errors);
+      }
     } else {
       console.log("not valid");
     }
@@ -23,6 +46,9 @@ export default function pages() {
         <p className={style["sign-up-text"]}>Sign Up</p>
       </div>
       <div className={style["right-panel"]}>
+        {errors.map((error) => (
+          <li>{error}</li>
+        ))}
         <form
           onSubmit={handleSubmit}
           // action={saveUser}
@@ -38,18 +64,21 @@ export default function pages() {
           <input
             type="text"
             name="fullname"
+            onChange={(e) => setName((e.currentTarget as any).value)}
             className={style["person-info"]}
             placeholder="Name Surname"
           />
           <input
             type="text"
             name="username"
+            onChange={(e) => setUsername((e.currentTarget as any).value)}
             className={style["person-info"]}
             placeholder="Username"
           />
           <input
             type="password"
             name="password"
+            onChange={(e) => setPassword((e.currentTarget as any).value)}
             className={style["person-info"]}
             placeholder="Password"
           />

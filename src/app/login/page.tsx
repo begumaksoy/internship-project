@@ -1,7 +1,5 @@
 import styles from "./login.module.css";
 import Link from "next/link";
-import { FormEvent } from "react";
-import { validateUser } from "../actions/validation";
 
 export default function pages() {
   return (
@@ -15,7 +13,7 @@ export default function pages() {
       </div>
       <div className={styles["rightPanel"]}>
         <p className={styles["loginText"]}>Login</p>
-        <form action={validateUser} className="signup-form">
+        <form className="signup-form">
           <div className={styles["person-email"]}>
             <label className="person-email">Enter your email or username</label>
             <input
