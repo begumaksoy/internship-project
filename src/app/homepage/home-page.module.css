@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: black;
+  padding: 0.5px 0;
+  border-bottom: rgba(0, 0, 0, 0.122) solid 0.5px;
+}
+
+.headText {
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.headText1 {
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.headLogin {
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 570px;
+  margin-top: 20px;
+}

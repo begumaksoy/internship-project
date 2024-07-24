@@ -49,11 +49,7 @@ export default function pages() {
         {errors.map((error) => (
           <li>{error}</li>
         ))}
-        <form
-          onSubmit={handleSubmit}
-          // action={saveUser}
-          className="signup-form"
-        >
+        <form onSubmit={handleSubmit} className="signup-form">
           <input
             type="text"
             name="email"
