@@ -42,3 +42,13 @@
   margin-left: 570px;
   margin-top: 20px;
 }
+
+.container {
+  position: fixed;
+}
+
+.body {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
