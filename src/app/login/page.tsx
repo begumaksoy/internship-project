@@ -1,5 +1,7 @@
 "use client";
 import styles from "./login.module.css";
+import Image from "next/image";
+
 import { FormEvent, useState } from "react";
 import axios, { AxiosError } from "axios";
 import Link from "next/link";
@@ -41,6 +43,12 @@ export default function pages() {
   return (
     <div className={styles.container}>
       <div className={styles.leftPanel}>
+        <Image
+          src={"/appLogo.png"}
+          width={200}
+          height={100}
+          alt="app logo"
+        ></Image>
         <p className={styles["welcomeText"]}>Welcome,</p>
         <p className={styles.signUpText}>Please sign up to login</p>
         <Link href="/sign-up">

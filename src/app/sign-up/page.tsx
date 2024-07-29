@@ -3,6 +3,8 @@ import { FormEvent, useState } from "react";
 import style from "./sign-up.module.css";
 import { saveUser } from "../actions/user";
 import axios, { AxiosError } from "axios";
+import Image from "next/image";
+
 let pattern =
   /^([a-z]|[0-9]|(-|_)([a-z]|[0-9])+)+([a-z]|[0-9]|(-|_|.)([a-z]|[0-9])+)*(-|_)?@([a-z]|[0-9])+(.([a-z]|[0-9])+)*.[a-z]{2,}$/i;
 
@@ -46,6 +48,12 @@ export default function pages() {
         <p className={style["sign-up-text"]}>Sign Up</p>
       </div>
       <div className={style["right-panel"]}>
+        <Image
+          src={"/appLogo.png"}
+          width={200}
+          height={100}
+          alt="app logo"
+        ></Image>
         {errors.map((error) => (
           <li>{error}</li>
         ))}
