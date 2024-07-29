@@ -36,9 +36,21 @@ export default function pages() {
         </ul>
       </div>
       <div className={styles.body}>
-        <p className="mainText" id="mainText">
-          This app is created by an intern named Begüm Aksoy in her mandatory
-          internship in Kafein Technology.
+        <h1 className={styles.h1Text}>Who made this app?</h1>
+        <p className={styles.mainText} id="mainText">
+          This app is created by an intern named Begüm Aksoy in her summer
+          internship at Kafein Technology.
+        </p>
+        <h1 className={styles.h1Text2}>What is the inspiration?</h1>
+
+        <p className={styles.mainText}>
+          She got inspired by the working culture of the Kafein Technology,
+          their multi-customer project groups between their workers.
+        </p>
+        <p className={styles.mainText}>
+          Kafein workers are all so open to socialize, why wouldn't be a
+          platform for workers to socialize within other group members and they
+          reply to the questions whenever they want?
         </p>
         <div className={styles.bodyText}></div>
       </div>

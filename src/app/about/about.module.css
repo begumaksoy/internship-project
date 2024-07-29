@@ -45,9 +45,8 @@
 
 .body {
   display: flex;
+  flex-direction: column;
   margin-top: 100px;
-  justify-content: center;
-  align-items: center;
 }
 
 .signUpButton {
@@ -132,6 +131,23 @@
 }
 
 .mainText {
+  font-size: x-large;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.h1Text {
   font-size: xx-large;
-  padding-top: 100px;
+  font-weight: bolder;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.h1Text2 {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: none;
 }
