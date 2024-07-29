@@ -4,6 +4,7 @@ import style from "./sign-up.module.css";
 import { saveUser } from "../actions/user";
 import axios, { AxiosError } from "axios";
 import Image from "next/image";
+import Link from "next/link";
 
 let pattern =
   /^([a-z]|[0-9]|(-|_)([a-z]|[0-9])+)+([a-z]|[0-9]|(-|_|.)([a-z]|[0-9])+)*(-|_)?@([a-z]|[0-9])+(.([a-z]|[0-9])+)*.[a-z]{2,}$/i;
@@ -46,6 +47,10 @@ export default function pages() {
     <div className={style["container"]}>
       <div className={style["left-panel"]}>
         <p className={style["sign-up-text"]}>Sign Up</p>
+        <p>Already signed up? Click to login.</p>
+        <Link href="/login">
+          <button className={style["login-button"]}>Log in</button>
+        </Link>
       </div>
       <div className={style["right-panel"]}>
         <Image
