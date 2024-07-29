@@ -39,13 +39,12 @@ export default function pages() {
 
             <div className={styles["question"]}>
               <label className="question">Add your question</label>
-              <input
-                type="text"
+              <textarea
                 placeholder="Add your description here..."
                 id="question"
                 name="question"
                 className={styles["questionInput"]}
-              />
+              ></textarea>
             </div>
 
             <div>
