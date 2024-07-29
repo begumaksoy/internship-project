@@ -43,12 +43,14 @@ export default function pages() {
   return (
     <div className={styles.container}>
       <div className={styles.leftPanel}>
-        <Image
-          src={"/appLogo.png"}
-          width={200}
-          height={100}
-          alt="app logo"
-        ></Image>
+        <Link href={"/homepage"}>
+          <Image
+            src={"/appLogo.png"}
+            width={200}
+            height={100}
+            alt="app logo"
+          ></Image>
+        </Link>
         <p className={styles["welcomeText"]}>Welcome,</p>
         <p className={styles.signUpText}>Please sign up to login</p>
         <Link href="/sign-up">
