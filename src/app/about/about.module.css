@@ -130,3 +130,8 @@
 .questionInput::placeholder {
   text-align: start;
 }
+
+.mainText {
+  font-size: xx-large;
+  padding-top: 100px;
+}

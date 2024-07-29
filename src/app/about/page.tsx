@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./question-page.module.css";
+import styles from "./about.module.css";
 import Image from "next/image";
 
 export default function pages() {
@@ -36,36 +36,11 @@ export default function pages() {
         </ul>
       </div>
       <div className={styles.body}>
-        <div className={styles.bodyText}>
-          <form className="question-form">
-            <div className={styles["question-title"]}>
-              <label className="question-title">Add a title</label>
-              <input
-                type="text"
-                placeholder="Title"
-                id="title"
-                name="title"
-                className={styles["titleInput"]}
-              />
-            </div>
-
-            <div className={styles["question"]}>
-              <label className="question">Add your question</label>
-              <textarea
-                placeholder="Add your description here..."
-                id="question"
-                name="question"
-                className={styles["questionInput"]}
-              ></textarea>
-            </div>
-
-            <div>
-              <button className={styles["submitButton"]}>
-                Submit Your Question
-              </button>
-            </div>
-          </form>
-        </div>
+        <p className="mainText" id="mainText">
+          This app is created by an intern named Begüm Aksoy in her mandatory
+          internship in Kafein Technology.
+        </p>
+        <div className={styles.bodyText}></div>
       </div>
     </div>
   );

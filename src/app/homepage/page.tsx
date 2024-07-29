@@ -14,9 +14,21 @@ export default function pages() {
           alt="app logo"
         ></Image>
         <ul>
-          <li className={styles.headText1}>Home</li>
-          <li className={styles.headText}>Questions</li>
-          <li className={styles.headText}>About</li>
+          <li className={styles.headText1}>
+            <Link href="/homepage">
+              <button>Home</button>
+            </Link>
+          </li>
+          <li className={styles.headText}>
+            <Link href="/askQuestion">
+              <button>Questions</button>
+            </Link>
+          </li>
+          <li className={styles.headText}>
+            <Link href="/about">
+              <button>About</button>
+            </Link>
+          </li>
           <li className={styles.headLogin}>
             <Link href="/login">
               <button>Log in</button>
