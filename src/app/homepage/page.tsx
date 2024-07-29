@@ -21,7 +21,7 @@ export default function pages() {
           </li>
           <li className={styles.headText}>
             <Link href="/askQuestion">
-              <button>Questions</button>
+              <button>Ask Question</button>
             </Link>
           </li>
           <li className={styles.headText}>
